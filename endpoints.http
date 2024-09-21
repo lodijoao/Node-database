@@ -1,0 +1,28 @@
+###
+
+GET http://localhost:3333/
+
+###
+
+POST http://localhost:3333/new-dadosCarros
+Content-Type: application/json
+
+{
+    "modelo": "gol",
+    "cor": "vermelho"
+}
+
+###
+
+PUT http://localhost:3333/alter-dadosCarros/0f61dbe9-6be7-4709-bf68-4e80a17823d7
+Content-Type: application/json
+
+{
+    //"id": "3",
+    "modelo": "civic",
+    "cor": "azul"
+}
+
+###
+
+DELETE http://localhost:3333/delete-dadosCarros/554d10d9-0cc9-4e02-8279-542a92fd782e
